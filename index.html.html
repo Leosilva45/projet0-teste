@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            color: #ff69b4;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #ff69b4;
+            color: white;
+        }
+        
+        #pedido {
+            margin-top: 20px;
+        }
+        
+        .pedido-texto {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff69b4;
+            margin-bottom: 20px;
+        }
+        
+        .respostas button {
+            margin: 10px;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        
+        .sim {
+            background-color: #32cd32;
+            color: white;
+        }
+        
+        .nao {
+            background-color: #ff4500;
+            color: white;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        #resposta {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #ff69b4;
+        }
+    </style>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Namoro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Olá, meu amor! <3</h1>
+        <p>Estou nervoso, mas tenho algo muito importante para te pedir...</p>
+        <button id="btnPedido">Clique para ver!</button>
+        <div id="pedido" class="hidden">
+            <p class="pedido-texto">Quer namorar comigo?</p>
+            <div class="respostas">
+                <button class="sim">Sim</button>
+                <button class="nao">Não</button>
+            </div>
+        </div>
+        <p id="resposta" class="hidden"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+</body>
+</html>
